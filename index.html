@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trekking</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links">
+            <li class="active">Home</li>
+            <li> Tours</li>
+            <li> Explore</li>
+            <li> About</li>
+            <li> <a href="#" class="btn">Contact</a></li>
+        </ul>
+        <div class="menu-toggle-icon" id="menu-toggle-icon">
+            <i class="ri-menu-3-line menu-open-icon"></i>
+            <i class="ri-close-line menu-close-icon"></i>
+        </div>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Explore The Colorful World</h2>
+            <div class="line"></div>
+            <h1>A Wonderful Gift</h1>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- EVENTS -->
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="/images/explore-3.jpg" alt="">
+                <h4>Everest Camp Trek</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisitrum suscipit molestiae velit quaerat fugiat veritatis.</p>
+                <a href="" class="btn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="/images/explore-2.jpg" alt="">
+                <h4>Making Holidays</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum suscipit molestiae velit quaerat fugiat veritatis.</p>
+                <a href="" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPLORE -->
+    <section class="explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE WORLD</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit delectus dolores adipisci numquam rem similique et, corporis amet, aut commodi optio ea modi, obcaecati nobis!</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>UPCOMING TOURS & DESTINATIONS</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iusto optio deleniti necessitatibus consequatur, distinctio dolorem nesciunt nostrum maxime hic aut impedit cupiditate perspiciatis, pariatur vel! Eaque assumenda obcaecati
+                    non.
+                </p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./images/tour-1.jpg" alt="">
+                    <img src="./images/tour-2.jpg" alt="">
+                    <img src="./images/tour-3.jpg" alt="">
+                    <img src="./images/tour-4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <p>123 Fifth Avenue,NY 10160, New York, USA | Phone: 800-123-456 | Email: contact@gmail.com</p>
+        <p>Copyright &copy; 2020 Outdoor Adventure</p>
+    </section>
+    <script>
+        const menuBtn = document.querySelector(".menu-toggle-icon");
+        const navLinks = document.querySelector(".nav-links");
+
+        console.log(menuBtn)
+        console.log(navLinks)
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-nav');
+            menuBtn.classList.toggle('active-icon');
+        })
+    </script>
+
+</body>
+
+</html>
